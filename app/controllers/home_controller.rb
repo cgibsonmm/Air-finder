@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
 class HomeController < ApplicationController
-  def Index; end
+  def index
+    @items = Item.all
+  end
 end
