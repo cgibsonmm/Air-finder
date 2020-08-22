@@ -1,0 +1,4 @@
+- @items.each do |i|
+  = i.name
+  - if i.image.attached?
+    = image_tag i.image, alt: '', height: '', width: '', class: ''
