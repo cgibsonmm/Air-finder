@@ -9,6 +9,7 @@
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
     = stylesheet_pack_tag 'application', 'data-turbolinks-track': 'relaod'
   %body
-    .container.m-auto
+    .m-auto
       = render "shared/navbar"
-      = yield
+      .container.m-auto
+        = yield

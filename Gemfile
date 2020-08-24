@@ -25,6 +25,7 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 
 gem 'country_select'
+gem 'font-awesome-rails'
 gem 'haml-rails', '~> 2.0'
 gem 'simple_form'
 

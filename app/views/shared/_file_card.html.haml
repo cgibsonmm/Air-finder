@@ -1,5 +1,14 @@
-.bg-gray-100.h-60.rounded
-  .header
-    = file.name
-  .deatails
-    = file.description
+.flex.flex-col.items-center.p-1{class: "w-1/2 md:w-1/4"}
+  .bg-gray-200.rounded-lg.h-full.w-full.p-1.shadow
+    %h5.text-xl.font-bold
+      = file.name
+      = image_tag Faker::Placeholdit.image(size: '100x100'), class: 'w-full object-cover'
+    %p.text-sm
+      = truncate(file.description)
+    %hr
+      .flex.items-center.justify-between
+        .bg-green-300.p-2.font-semibold.inline-block.rounded.shadow{class: 'hover:bg-green-500'}
+          = fa_icon 'cart-plus', text: "$30.00"
+        
+        .text-blue-800.text-xl{class: 'hover:text-blue-500'}
+          = fa_icon 'thumbs-up'
