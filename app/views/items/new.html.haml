@@ -1,4 +1,3 @@
-= simple_form_for @item do |f|
-  = f.input :name
-  = f.file_field :image
-  = f.button :submit
+List a new Item
+= render 'form', item: @item
+
